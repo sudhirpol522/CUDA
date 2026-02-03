@@ -1,0 +1,24 @@
+# Ignore compiled binaries
+*.exe
+*.o
+*.obj
+
+# Ignore CUDA compilation artifacts
+*.exp
+*.lib
+*.pdb
+
+# Ignore temporary files
+*.log
+*.txt
+build_log.txt
+
+# Ignore IDE files
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Ignore system files
+.DS_Store
+Thumbs.db
