@@ -10,10 +10,10 @@ __global__ void add2DMatrix(float *a,float *b,float *c, int rows, int cols){
 }
 
 int main(){
-    int rows=8;
-    int cols=8;
-    
-    dim3 block(2,2);
+    int rows=28;
+    int cols=28;
+
+    dim3 block(16,16);
     dim3 grid((cols+block.x-1)/block.x,(rows+block.y-1)/block.y);
 
     size_t bytes=rows*cols*sizeof(float);
